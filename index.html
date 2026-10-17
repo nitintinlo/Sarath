@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.P. Sarath (എസ്.പി. ശരത്ത്) | Official Author Website | കോണ്ടെസ്സ (Contessa), വരത്തുപോക്ക് & ഉറക്കപ്പിശാച്</title>
+  <meta name="description"
+    content="Official website of S.P. Sarath, author of acclaimed Malayalam novels 'Contessa' (കോണ്ടെസ്സ), 'Varathupokku' (വരത്തുപോക്ക്), and 'Urakkappishachu' (ഉറക്കപ്പിശാച്). Published by DC Books and Manorama Books.">
+  <meta name="keywords"
+    content="SP Sarath, S.P. Sarath, കോണ്ടെസ്സ, Contessa, വരത്തുപോക്ക്, Varathupokku, ഉറക്കപ്പിശാച്, Urakkappishachu, DC Books, Manorama Books, Orathan Inashu, Malayalam novel, Malayalam horror, Kerala backwaters, Goodreads">
+  <meta name="author" content="S.P. Sarath">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="S.P. Sarath (എസ്.പി. ശരത്ത്) | Official Author Website">
+  <meta property="og:description"
+    content="Official author website of S.P. Sarath. Enter the world of Contessa (കോണ്ടെസ്സ), Varathupokku (വരത്തുപോക്ക്) and Urakkappishachu (ഉറക്കപ്പിശാച്).">
+  <meta property="og:image" content="assets/images/BOOK - CONTESSA.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <!-- Custom Firefly Cursor -->
+  <div id="custom-cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-trail" class="custom-cursor-trail" aria-hidden="true"></div>
+
+  <!-- Atmospheric Canvas Layers -->
+  <canvas id="fog-canvas" aria-hidden="true"></canvas>
+  <canvas id="fireflies-canvas" aria-hidden="true"></canvas>
+
+  <!-- 3D Mangrove Roots Emerging from Left and Right -->
+  <div class="roots-frame roots-left" aria-hidden="true"></div>
+  <div class="roots-frame roots-right" aria-hidden="true"></div>
+
+  <!-- Hanging Aerial Banyan Vines & Ropes -->
+  <div class="hanging-vines-top" aria-hidden="true">
+    <svg class="hanging-vines-svg" viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path class="hanging-rope" d="M 60,0 Q 80,45 65,85" />
+      <path class="hanging-rope" d="M 120,0 Q 140,55 125,75" style="animation-delay: 1.2s;" />
+      <path class="hanging-rope" d="M 280,0 Q 260,35 275,65" style="animation-delay: 2.5s;" />
+      <path class="hanging-rope" d="M 450,0 Q 470,60 455,80" style="animation-delay: 0.8s;" />
+      <path class="hanging-rope" d="M 720,0 Q 740,40 730,70" style="animation-delay: 3.1s;" />
+      <path class="hanging-rope" d="M 980,0 Q 960,65 975,85" style="animation-delay: 1.7s;" />
+      <path class="hanging-rope" d="M 1150,0 Q 1170,50 1160,80" style="animation-delay: 2.2s;" />
+      <path class="hanging-rope" d="M 1340,0 Q 1320,40 1335,75" style="animation-delay: 0.5s;" />
+    </svg>
+  </div>
+
+  <!-- Ambient River Audio Controller Sticky Button -->
+  <div id="audio-controller" class="audio-controller" title="Toggle Alappuzha River Night Ambience">
+    <div class="audio-waves" aria-hidden="true">
+      <div class="audio-wave-bar"></div>
+      <div class="audio-wave-bar"></div>
+      <div class="audio-wave-bar"></div>
+      <div class="audio-wave-bar"></div>
+    </div>
+    <span id="audio-label" class="audio-label">River Ambience: Off</span>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <a href="#hero" class="brand-emblem">
+      <span class="brand-monogram">S.P<span class="accent">.</span> SARATH</span>
+      <span class="brand-desc">Writer &amp; Journalist</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#author" class="nav-link">The Author</a></li>
+      <li><a href="#contessa" class="nav-link">Contessa</a></li>
+      <li><a href="#urakkappishachu" class="nav-link">Novels</a></li>
+      <li><a href="#news" class="nav-link">News & Features</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener"
+          class="nav-link">Goodreads ↗</a></li>
+    </ul>
+
+    <div class="header-actions">
+      <a href="#contessa" class="nav-cta header-cta" data-open-excerpt="contessa">Read Excerpt</a>
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-top">
+        <a href="#hero" class="brand-emblem mobile-brand">
+          <span class="brand-monogram">S.P<span class="accent">.</span> SARATH</span>
+          <span class="brand-desc">Writer &amp; Journalist</span>
+        </a>
+        <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu">✕</button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-list">
+          <li><a href="#hero" class="mobile-nav-link"><span class="nav-num">01</span><span class="nav-text">Home</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#author" class="mobile-nav-link"><span class="nav-num">02</span><span class="nav-text">The Author (എസ്.പി. ശരത്ത്)</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#contessa" class="mobile-nav-link"><span class="nav-num">03</span><span class="nav-text">കോണ്ടെസ്സ (Contessa) • New</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#urakkappishachu" class="mobile-nav-link"><span class="nav-num">04</span><span class="nav-text">ഉറക്കപ്പിശാച് (Urakkappishachu)</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#varathupokku" class="mobile-nav-link"><span class="nav-num">05</span><span class="nav-text">വരത്തുപോക്ക് (Varathupokku)</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#news" class="mobile-nav-link"><span class="nav-num">06</span><span class="nav-text">News &amp; Media Coverage</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="#reviews" class="mobile-nav-link"><span class="nav-num">07</span><span class="nav-text">Reader &amp; Press Reviews</span><span class="nav-arrow">→</span></a></li>
+          <li><a href="https://www.mbibooks.com/product/contessa/" target="_blank" rel="noopener" class="mobile-nav-link external"><span class="nav-num">08</span><span class="nav-text">Contessa on Mathrubhumi Books</span><span class="nav-arrow">↗</span></a></li>
+          <li><a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener" class="mobile-nav-link external"><span class="nav-num">09</span><span class="nav-text">Goodreads Author Profile</span><span class="nav-arrow">↗</span></a></li>
+          <li><a href="https://www.storytel.com/in/books/urakkappishach-ഉറക-കപ-പ-ശ-ച-12158747" target="_blank" rel="noopener" class="mobile-nav-link external"><span class="nav-num">10</span><span class="nav-text">Storytel Malayalam Audio</span><span class="nav-arrow">↗</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <button class="btn-primary mobile-drawer-cta" data-open-excerpt="contessa">
+          <span>Read Excerpt Chapter</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+        </button>
+        <p class="mobile-nav-meta">S.P. Sarath • Author of Contessa, Varathupokku &amp; Urakkappishachu • DC Books &amp; Manorama Books</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1: HERO BANNER SECTION (CINEMATIC VIDEO BANNER)
+       ========================================================================== -->
+  <section class="hero-banner-section" id="hero">
+    <div class="hero-background">
+      <video class="hero-bg-video" autoplay loop muted playsinline poster="assets/images/hero-backwaters.jpg">
+        <source src="Sarath Hero Video.mp4" type="video/mp4">
+        <source src="assets/videos/sarath-hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-vignette"></div>
+      <div class="hero-water-reflection"></div>
+    </div>
+
+    <!-- Green Shining Center Aura -->
+    <div class="section-ambient-glow"
+      style="top: 35%; left: 50%; transform: translate(-50%, -50%); width: 650px; height: 450px;" aria-hidden="true">
+    </div>
+
+    <div class="container hero-banner-container">
+      <div class="hero-banner-content">
+        <h1 class="hero-banner-title">S.P. Sarath</h1>
+        <div class="hero-banner-subtitle">Writer and Journalist</div>
+        <div class="hero-banner-malayalam">എസ്.പി. ശരത്ത്</div>
+
+        <div class="hero-banner-cta-group">
+          <a href="#author" class="btn-primary">
+            <span>Explore Author Profile</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+          <a href="#contessa" class="btn-secondary">
+            <span>Discover Novels</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Scroll Cue -->
+    <a href="#author" class="hero-scroll-cue" aria-label="Scroll down to author profile">
+      <span class="scroll-cue-text">Explore Author</span>
+      <span class="scroll-cue-chevron">↓</span>
+    </a>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: AUTHOR PROFILE SECTION
+       ========================================================================== -->
+  <section class="author-profile-section" id="author">
+    <!-- Green Shining Ambient Glowing Orbs -->
+    <div class="section-ambient-glow" style="top: 20%; left: 8%; width: 480px; height: 480px;" aria-hidden="true"></div>
+    <div class="section-ambient-glow"
+      style="bottom: 15%; right: 6%; width: 440px; height: 440px; background: radial-gradient(circle, rgba(13, 242, 148, 0.12) 0%, transparent 70%);"
+      aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-heading-block" style="text-align: center; max-width: 650px;">
+        <span class="section-tag">About The Novelist</span>
+        <h2 class="section-title">The Author</h2>
+        <p class="section-subtitle">
+          Master of rural Kerala psychological dread, folklore horrors, and gripping contemporary narratives.
+        </p>
+      </div>
+
+      <div class="author-grid">
+
+        <!-- Left Column: Author Portrait -->
+        <div class="author-portrait-frame">
+          <img src="assets/images/Profile Picture.png" alt="Author S.P. Sarath Official Portrait"
+            class="author-portrait-img">
+        </div>
+
+        <!-- Right Column: Author Biography, Highlights & Actions -->
+        <div class="author-bio-content">
+          <div class="hero-badge" style="margin-bottom: 16px;">
+            <span class="pulse-dot"></span>
+            <span style="font-family: var(--font-malayalam); letter-spacing: 0.05em;">മലയാള സാഹിത്യകാരൻ • DC
+              BOOKS &amp; MANORAMA BOOKS</span>
+          </div>
+
+          <h3 class="author-heading" style="font-size: clamp(2.4rem, 4vw, 3.6rem); margin-bottom: 4px;">S.P. Sarath</h3>
+          <div class="author-designation">Writer and Journalist</div>
+          <div
+            style="font-family: var(--font-malayalam); font-size: 2rem; color: var(--emerald-primary); margin-bottom: 18px; font-weight: 700; text-shadow: 0 0 20px rgba(13, 242, 148, 0.35);">
+            എസ്.പി. ശരത്ത്
+          </div>
+
+          <p class="author-manifesto" style="font-size: 1.25rem; margin-bottom: 22px;">
+            Author of the acclaimed Malayalam sensations <em>Contessa</em> (കോണ്ടെസ്സ), <em>Varathupokku</em> (വരത്തുപോക്ക്), and
+            <em>Urakkappishachu</em> (ഉറക്കപ്പിശാച്).
+          </p>
+
+          <p class="bio-text">
+            S.P. Sarath is one of contemporary Malayalam literature's most distinctive voices in the realms of
+            psychological horror, mystery, and magical realism. Creator of the celebrated <strong>Mundar folklore
+              saga</strong> and the high-octane investigative drama <strong>Contessa</strong>, his prose captures both the claustrophobic dread of rain-swept village nights and the sprawling, cinematic realities of Pan-Indian life.
+          </p>
+          <p class="bio-text"
+            style="font-family: var(--font-malayalam); font-size: 1.05rem; color: #a5c2b3; line-height: 1.8;">
+            കേരളത്തിന്റെ കായൽ പശ്ചാത്തലത്തിലും മുണ്ടാർ എന്ന ഗ്രാമത്തിലും നടക്കുന്ന നിഗൂഢ സംഭവങ്ങളെയും,
+            ഉറക്കപ്പിശാചിന്റെയും വരത്തുപോക്കിന്റെയും ഭയാനകമായ വഴികളെയും, ഒരത്തൻ ഈനാശുവിന്റെ സാമ്രാജ്യവും കോണ്ടെസ്സ കാറും ചേർത്തുവെച്ച പുതിയ അന്വേഷണ വഴികളെയും അടയാളപ്പെടുത്തുന്ന കൃതികൾ.
+          </p>
+
+          <div class="author-awards-list" style="margin-bottom: 30px;">
+            <div class="award-item">
+              <span class="award-trophy">✦</span>
+              <div class="award-text"><strong>Latest Novel — Contessa (കോണ്ടെസ്സ)</strong> — Published by DC Books</div>
+            </div>
+            <div class="award-item">
+              <span class="award-trophy">✦</span>
+              <div class="award-text"><strong>Manorama Books Blockbuster Bestsellers</strong> — Urakkappishachu &amp;
+                Varathupokku</div>
+            </div>
+            <div class="award-item">
+              <span class="award-trophy">✦</span>
+              <div class="award-text"><strong>Goodreads Community Acclaim</strong> — Over 365+ Reader Ratings (★ 4.30 &amp;
+                ★ 3.99)</div>
+            </div>
+            <div class="award-item">
+              <span class="award-trophy">✦</span>
+              <div class="award-text"><strong>Storytel Top Malayalam Audio Novel</strong> — Widely streamed audiobook
+                adaptation</div>
+            </div>
+          </div>
+
+          <div class="hero-actions" style="margin-bottom: 30px;">
+            <a href="#contessa" class="btn-primary" style="background: linear-gradient(135deg, #d32f2f, #9a0007); border: 1px solid rgba(255, 138, 128, 0.5); color: #fff;">
+              <span>Explore കോണ്ടെസ്സ</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#urakkappishachu" class="btn-secondary">
+              <span>ഉറക്കപ്പിശാച്</span>
+            </a>
+            <a href="#varathupokku" class="btn-secondary">
+              <span>വരത്തുപോക്ക്</span>
+            </a>
+            <a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener"
+              class="btn-goodreads">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span>Goodreads Profile ↗</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-strip" style="padding-top: 24px;">
+            <div class="meta-item">
+              <span class="number">3 Novels</span>
+              <span class="label">DC Books &amp; Manorama</span>
+            </div>
+            <div class="meta-item">
+              <span class="number">4.30 &amp; 3.99 ★</span>
+              <span class="label">Goodreads Ratings</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: URAKKAPPISHACHU (ഉറക്കപ്പിശാച്) — 3D BOOK SHOWCASE (PART I)
+       ========================================================================== -->
+  <section class="featured-section" id="urakkappishachu">
+    <!-- Green & Gold Shining Ambient Glow -->
+    <div class="section-ambient-glow"
+      style="top: 15%; left: 8%; background: radial-gradient(circle, rgba(212, 175, 55, 0.16) 0%, transparent 70%);"
+      aria-hidden="true"></div>
+    <div class="section-ambient-glow" style="bottom: 15%; right: 10%;" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="featured-grid">
+
+        <!-- 3D Perspective Floating Book Scene -->
+        <div class="book-3d-scene">
+          <div class="book-3d-pedestal"
+            style="background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.35) 0%, rgba(13, 242, 148, 0.2) 50%, transparent 75%);"
+            aria-hidden="true"></div>
+          <div class="book-card-3d" id="book-3d-urakkappishachu" title="Click or hover to tilt 3D book">
+            <!-- Spine -->
+            <div class="book-spine-3d">
+              <span>ഉറക്കപ്പിശാച് • S.P. SARATH</span>
+            </div>
+            <!-- Pages Thickness -->
+            <div class="book-pages-3d"></div>
+            <!-- Front Face -->
+            <div class="book-cover-face">
+              <img src="assets/images/BOOK - URAKKAPPISHACHU.png"
+                alt="ഉറക്കപ്പിശാച് Urakkappishachu by S.P. Sarath Official Book Cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Details & Synopsis -->
+        <div class="featured-info">
+          <div class="accolade-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>The Phenomenal Malayalam Bestseller • Part I</span>
+          </div>
+
+          <h2 class="book-title-malayalam"
+            style="color: var(--gold-primary); text-shadow: 0 0 25px rgba(212, 175, 55, 0.4);">ഉറക്കപ്പിശാച്</h2>
+          <h3 class="book-title-main">URAKKAPPISHACHU</h3>
+
+          <!-- Goodreads Live Rating Bar -->
+          <div class="goodreads-rating-bar">
+            <span class="gr-stars" style="color: var(--gold-primary);">★★★★★</span>
+            <span><strong>4.30</strong> / 5.0 (257 ratings, 52 reviews)</span>
+            <span>•</span>
+            <a href="https://www.goodreads.com/book/show/227822388-urakkappishachu" target="_blank" rel="noopener">View
+              on Goodreads ↗</a>
+          </div>
+
+          <p class="book-tagline">"The entity that suffocates your chest while your consciousness remains fully awake."
+          </p>
+
+          <div class="book-quote-malayalam"
+            style="border-left-color: var(--gold-primary); background: rgba(212, 175, 55, 0.05); color: #edd99a;">
+            "ചെലതരം കേൾവികളും കാഴ്ചകളും എല്ലാർക്കുവൊന്നും കാണാൻ പറ്റത്തില്ല. മോളേ, പുസ്തകത്തേലൊക്കെ
+            എഴുതിവെച്ചിരിക്കുന്നതല്ല ലോകം. നമ്മൾ ഉറങ്ങുമ്പോഴും കണ്ണുചിമ്മാതെ കാത്തിരിക്കുന്ന ചെലതുണ്ട്...
+            ഉറക്കപ്പിശാചുകൾ."
+          </div>
+
+          <p class="book-synopsis">
+            The landmark novel that established S.P. Sarath as a master of modern Malayalam horror and magical realism.
+            Bedridden inside an ancient, rain-swept wooden house in the backwater hamlet of <strong>Mundar</strong>, the
+            aging patriarch <strong>Narayanan Vappan</strong> begins narrating strange, hypnotic, and horrifying
+            accounts to his daughter-in-law <strong>Rathi</strong>. As monsoons lash the courtyard and the canals rise,
+            the boundary between sleep paralysis, ancestral guilt, and village demonic superstition dissolves into
+            waking dread.
+          </p>
+
+          <div class="book-lore-pills">
+            <span class="lore-pill publisher">Publisher: Manorama Books</span>
+            <span class="lore-pill gold">247 Pages • Paperback</span>
+            <span class="lore-pill">ISBN: 9789359593876</span>
+            <span class="lore-pill">Malayalam Folk Horror / Mystery</span>
+          </div>
+
+          <div class="featured-actions">
+            <a href="https://www.storytel.com/in/books/urakkappishach-ഉറക-കപ-പ-ശ-ച-12158747?utm_source=internal&utm_medium=app_link&utm_campaign=share_links"
+              target="_blank" rel="noopener" class="btn-storytel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+              </svg>
+              <span>Listen on Storytel</span>
+            </a>
+            <button class="btn-primary" data-open-excerpt="urakkappishachu">
+              <span>Read Excerpt Chapter</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </button>
+            <a href="https://www.goodreads.com/book/show/227822388-urakkappishachu" target="_blank" rel="noopener"
+              class="btn-goodreads">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span>Goodreads Profile</span>
+            </a>
+            <a href="https://www.manoramaonline.com" target="_blank" rel="noopener" class="btn-secondary">
+              <span>Manorama Books Store ↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: VARATHUPOKKU (വരത്തുപോക്ക്) — 3D BOOK SHOWCASE (PART II - THE SEQUEL)
+       ========================================================================== -->
+  <section class="featured-section alt-bg" id="varathupokku">
+    <!-- Vibrant Emerald Shining Ambient Glow -->
+    <div class="section-ambient-glow"
+      style="top: 18%; left: 8%; background: radial-gradient(circle, rgba(13, 242, 148, 0.24) 0%, transparent 70%);"
+      aria-hidden="true"></div>
+    <div class="section-ambient-glow" style="bottom: 12%; right: 8%; width: 480px; height: 480px;" aria-hidden="true">
+    </div>
+
+    <div class="container">
+      <div class="featured-grid">
+
+        <!-- 3D Perspective Floating Book Scene -->
+        <div class="book-3d-scene">
+          <div class="book-3d-pedestal" aria-hidden="true"></div>
+          <div class="book-card-3d" id="book-3d-varathupokku" title="Click or hover to tilt 3D book">
+            <!-- Spine -->
+            <div class="book-spine-3d">
+              <span>വരത്തുപോക്ക് • S.P. SARATH</span>
+            </div>
+            <!-- Pages Thickness -->
+            <div class="book-pages-3d"></div>
+            <!-- Front Face -->
+            <div class="book-cover-face">
+              <img src="assets/images/BOOK - VARATHUPOKKU.png"
+                alt="വരത്തുപോക്ക് Varathupokku by S.P. Sarath Official Book Cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Details & Synopsis -->
+        <div class="featured-info">
+          <div class="accolade-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>The Blockbuster Sequel to Urakkappishachu</span>
+          </div>
+
+          <h2 class="book-title-malayalam">വരത്തുപോക്ക്</h2>
+          <h3 class="book-title-main">VARATHUPOKKU</h3>
+
+          <!-- Goodreads Live Rating Bar -->
+          <div class="goodreads-rating-bar">
+            <span class="gr-stars">★★★★☆</span>
+            <span><strong>3.99</strong> / 5.0 (108 ratings, 19 reviews)</span>
+            <span>•</span>
+            <a href="https://www.goodreads.com/book/show/252333743-varathupokku" target="_blank" rel="noopener">View on
+              Goodreads ↗</a>
+          </div>
+
+          <p class="book-tagline">"The literal path where wandering spirits and ancestral terrors cross the waking
+            world."</p>
+
+          <div class="book-quote-malayalam">
+            "മലയാളത്തിലെ മികച്ച ബെസ്‌റ്റ്സെല്ലർ ഉറക്കപ്പിശാചിനുശേഷം എസ് പി ശരത്തിൻ്റെ മറ്റൊരു ക്ലാസിക് നോവൽ.
+            മുണ്ടാറിന്റെ മണ്ണും വെള്ളവും സാക്ഷിയാകുന്ന അമാനുഷിക വിഭ്രാന്തികൾ."
+          </div>
+
+          <p class="book-synopsis">
+            Following the monumental success of <em>Urakkappishachu</em>, S.P. Sarath returns to the mist-wrapped rural
+            hamlet of <strong>Mundar</strong>. Centered on the haunting journey of <strong>Narayanan Vappan</strong>,
+            the novel explores the terrifying folklore of <em>Varathupokku</em>—the nocturnal trail of displaced spirits
+            crossing the muddy dykes between life and the beyond. Blurring the razor-thin boundary between psychosis,
+            village myth, and ancient backwater phantoms.
+          </p>
+
+          <div class="book-lore-pills">
+            <span class="lore-pill publisher">Publisher: Manorama Books</span>
+            <span class="lore-pill gold">292 Pages • Paperback</span>
+            <span class="lore-pill">ISBN: 9789359594699</span>
+            <span class="lore-pill">Rural Kerala Folk Horror</span>
+          </div>
+
+          <div class="featured-actions">
+            <a href="https://www.storytel.com/in/books/varathupokku-second-part-of-urakkappishach-14613860?utm_source=internal&utm_medium=app_link&utm_campaign=share_links"
+              target="_blank" rel="noopener" class="btn-storytel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <path
+                  d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+              </svg>
+              <span>Listen on Storytel</span>
+            </a>
+            <button class="btn-primary" data-open-excerpt="varathupokku">
+              <span>Read Excerpt Chapter</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </button>
+            <a href="https://www.goodreads.com/book/show/252333743-varathupokku" target="_blank" rel="noopener"
+              class="btn-goodreads">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span>Goodreads Profile</span>
+            </a>
+            <a href="https://www.manoramaonline.com" target="_blank" rel="noopener" class="btn-secondary">
+              <span>Manorama Books Store ↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: CONTESSA (കോണ്ടെസ്സ) — 3D BOOK SHOWCASE (LATEST NOVEL)
+       ========================================================================== -->
+  <section class="featured-section contessa-theme" id="contessa">
+    <!-- Crimson & Amber Shining Ambient Glow -->
+    <div class="section-ambient-glow"
+      style="top: 18%; left: 8%; background: radial-gradient(circle, rgba(229, 57, 53, 0.22) 0%, transparent 70%); width: 540px; height: 540px;"
+      aria-hidden="true"></div>
+    <div class="section-ambient-glow"
+      style="bottom: 12%; right: 8%; background: radial-gradient(circle, rgba(255, 110, 64, 0.18) 0%, transparent 70%); width: 500px; height: 500px;"
+      aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="featured-grid">
+
+        <!-- 3D Perspective Floating Book Scene -->
+        <div class="book-3d-scene">
+          <div class="book-3d-pedestal"
+            style="background: radial-gradient(ellipse at center, rgba(229, 57, 53, 0.5) 0%, rgba(255, 110, 64, 0.25) 50%, transparent 75%);"
+            aria-hidden="true"></div>
+          <div class="book-card-3d card-contessa" id="book-3d-contessa" title="Click or hover to tilt 3D book">
+            <!-- Spine -->
+            <div class="book-spine-3d spine-contessa">
+              <span>കോണ്ടെസ്സ • S.P. SARATH</span>
+            </div>
+            <!-- Pages Thickness -->
+            <div class="book-pages-3d"></div>
+            <!-- Front Face -->
+            <div class="book-cover-face">
+              <img src="assets/images/BOOK - CONTESSA.png"
+                alt="കോണ്ടെസ്സ Contessa by S.P. Sarath Official Book Cover DC Books">
+            </div>
+          </div>
+        </div>
+
+        <!-- Book Details & Synopsis -->
+        <div class="featured-info">
+          <div class="accolade-tag" style="color: #ff8a80;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>The All-New Novel • Published by DC Books</span>
+          </div>
+
+          <h2 class="book-title-malayalam crimson-glow">കോണ്ടെസ്സ</h2>
+          <h3 class="book-title-main">CONTESSA</h3>
+
+          <!-- Book Badge / Tag Bar -->
+          <div class="goodreads-rating-bar" style="border-color: rgba(229, 57, 53, 0.35); background: rgba(229, 57, 53, 0.08);">
+            <span style="color: #ff8a80; font-weight: 700;">★ NEW RELEASE</span>
+            <span>•</span>
+            <span>DC Books 1st Edition</span>
+            <span>•</span>
+            <a href="https://www.mbibooks.com/product/contessa/" target="_blank" rel="noopener" style="color: #ff8a80;">Available on Mathrubhumi Books ↗</a>
+          </div>
+
+          <p class="book-tagline" style="color: #ffcdd2;">"ഉറക്കപ്പിശാച്, വരത്തുപോക്ക് എന്നിവയ്ക്കു ശേഷം... ഒരത്തൻ ഈനാശുവിൽനിന്ന് നഷ്ടപ്പെട്ട നിധി തേടിയുള്ള ഒരു യാത്ര."</p>
+
+          <div class="book-quote-malayalam"
+            style="border-left-color: #e53935; background: rgba(229, 57, 53, 0.06); color: #ffcdd2;">
+            "ഇതൊരു അന്വേഷണമാണ്. ഒരത്തൻ ഈനാശുവിൽനിന്ന് നഷ്ടപ്പെട്ട നിധി തേടിയുള്ള ഒരു യാത്ര. ആ യാത്രയിൽ കണ്ടുമുട്ടുന്നവർക്കെല്ലാം ഓരോ കഥകളാണ്. മുന്നിൽ വരുന്ന പലതിനും നമ്മളോട് എന്തൊക്കൊയോ പറയാനുണ്ട്. അങ്ങനെ ഒരു വണ്ടിക്കഥയിലൂടെ പല ജീവിതങ്ങളിലെ യാഥാർത്ഥ്യങ്ങൾ തേടുകയാണ് ഈ നോവൽ."
+          </div>
+
+          <p class="book-synopsis">
+            Following the monumental success of <em>Urakkappishachu</em> and <em>Varathupokku</em>, S.P. Sarath returns with <strong>Contessa</strong>—a gripping investigative novel that unravels a labyrinthine quest for a lost treasure. Starting from the industrial empire of <strong>Orathan Inashu</strong>, the narrative embarks on an unforgettable journey through years of profound love and wandering roads. Who dared to intrude into Orathan's empire? What mysterious role does the legendary Contessa automobile play? A vivid, searing glimpse into Pan-Indian realities.
+          </p>
+
+          <div class="book-lore-pills">
+            <span class="lore-pill dcbooks">Publisher: DC Books</span>
+            <span class="lore-pill" style="border-color: rgba(255, 171, 64, 0.4); color: #ffe082; background: rgba(255, 171, 64, 0.08);">190 Pages • Papercover</span>
+            <span class="lore-pill">ISBN: 9788167306043</span>
+            <span class="lore-pill">Edition: 1</span>
+            <span class="lore-pill">Language: Malayalam</span>
+            <span class="lore-pill">Mystery / Pan-Indian Drama</span>
+          </div>
+
+          <div class="featured-actions">
+            <a href="https://www.mbibooks.com/product/contessa/" target="_blank" rel="noopener"
+              class="btn-mbibooks">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Order on Mathrubhumi Books ↗</span>
+            </a>
+            <button class="btn-crimson-cta" data-open-excerpt="contessa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+              <span>Read Excerpt</span>
+            </button>
+            <a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener"
+              class="btn-goodreads">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <span>Goodreads Profile</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: NEWS AND FEATURES
+       ========================================================================== -->
+  <section class="news-section" id="news">
+    <!-- Green Shining Ambient Glowing Orbs -->
+    <div class="section-ambient-glow" style="top: 15%; right: 8%; width: 550px; height: 550px;" aria-hidden="true">
+    </div>
+    <div class="section-ambient-glow"
+      style="bottom: 12%; left: 6%; width: 480px; height: 480px; background: radial-gradient(circle, rgba(13, 242, 148, 0.14) 0%, transparent 70%);"
+      aria-hidden="true"></div>
+
+    <div class="container">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+        <span class="section-tag">Media Coverage & Press</span>
+        <h2 class="section-title">News & Features</h2>
+        <p class="section-subtitle">
+          Prominent literary critiques, author profiles, and editorial features covering S.P. Sarath's folklore
+          universe.
+        </p>
+      </div>
+
+      <!-- Mobile Swipe Cue -->
+      <div class="carousel-swipe-hint" aria-hidden="true">
+        <span class="hint-arrow">←</span>
+        <span>Swipe articles</span>
+        <span class="hint-arrow">→</span>
+      </div>
+
+      <div class="news-grid" id="news-carousel">
+
+        <!-- News Card 1: Book Review: Urakkappishach (Manorama Online) -->
+        <a href="https://www.manoramaonline.com/literature/bookreview/2024/11/07/book-review-urakkapishach-by-s-p-sarath.html"
+          target="_blank" rel="noopener" class="news-card">
+          <div>
+            <div class="news-card-meta">
+              <span class="news-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                </svg>
+                Manorama Online
+              </span>
+              <span class="news-date">Nov 07, 2024</span>
+            </div>
+            <div class="news-card-subheading">Book Review • ഉറക്കപ്പിശാച്</div>
+            <h3 class="news-card-malayalam-heading">ഉറക്കം കെടുത്തും, ഈ ഉറക്കപ്പിശാച്</h3>
+            <h4 class="news-card-title">Book Review: Urakkappishach</h4>
+            <p class="news-card-desc">
+              An in-depth literary critique of S.P. Sarath's debut sensation, examining how the eerie insomnia and
+              supernatural dread of Mundar's backwaters completely redefine modern Malayalam psychological horror.
+            </p>
+          </div>
+          <div class="news-card-footer">
+            <div class="news-card-source">
+              <span>By <strong>അജീഷ് മുരളീധരൻ</strong></span>
+              <span>•</span>
+              <span>Literature Desk</span>
+            </div>
+            <div class="news-card-link-btn">
+              <span>Read Article</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- News Card 2: Varathupokku Review (Manorama Online) -->
+        <a href="https://www.manoramaonline.com/literature/bookreview/2026/07/27/varathupokku-novel-sp-sarath-review.html"
+          target="_blank" rel="noopener" class="news-card">
+          <div>
+            <div class="news-card-meta">
+              <span class="news-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                </svg>
+                Manorama Online
+              </span>
+              <span class="news-date">Jul 27, 2026</span>
+            </div>
+            <div class="news-card-subheading">Book Review • വരത്തുപോക്ക്</div>
+            <h3 class="news-card-malayalam-heading">ഹൊറർ ഫാന്റസിയുടെ മലയാള മുഖം: 'വരത്തുപോക്ക്'</h3>
+            <h4 class="news-card-title">Varathupokku Review</h4>
+            <p class="news-card-desc">
+              A comprehensive review hailing <em>Varathupokku</em> as the definitive benchmark of contemporary Malayalam
+              rural horror-fantasy, tracing the midnight tracks of wandering spirits across waterlogged dykes.
+            </p>
+          </div>
+          <div class="news-card-footer">
+            <div class="news-card-source">
+              <span>By <strong>Manorama Online</strong></span>
+              <span>•</span>
+              <span>Books & Culture</span>
+            </div>
+            <div class="news-card-link-btn">
+              <span>Read Article</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- News Card 3: SP Sharath Varathupokku Review (Manorama Online) -->
+        <a href="https://www.manoramaonline.com/literature/bookreview/2026/04/21/sp-sharath-varathupokku-novel-review.html"
+          target="_blank" rel="noopener" class="news-card">
+          <div>
+            <div class="news-card-meta">
+              <span class="news-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                </svg>
+                Manorama Online
+              </span>
+              <span class="news-date">Apr 21, 2026</span>
+            </div>
+            <div class="news-card-subheading">Literary Spotlight • S.P. Sarath</div>
+            <h3 class="news-card-malayalam-heading">വരത്തുപോക്ക്: മുണ്ടാറിന്റെ ഇതിഹാസം; അതിമനുഷ്യരുടെ അഴിഞ്ഞാട്ടം...
+            </h3>
+            <h4 class="news-card-title">SP Sharath Varathupokku Review</h4>
+            <p class="news-card-desc">
+              Exploring the folklore legend of Mundar, ancestral apparitions, and the psychological descent of Narayanan
+              Vappan in S.P. Sarath's spellbinding narrative triumph.
+            </p>
+          </div>
+          <div class="news-card-footer">
+            <div class="news-card-source">
+              <span>By <strong>Literary Critic Column</strong></span>
+              <span>•</span>
+              <span>Special Edition</span>
+            </div>
+            <div class="news-card-link-btn">
+              <span>Read Article</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        <!-- News Card 4: Varathupokku English Review (Onmanorama) -->
+        <a href="https://www.onmanorama.com/news/kerala/2026/07/28/varathupokku-novel-sp-sarath-review.html"
+          target="_blank" rel="noopener" class="news-card">
+          <div>
+            <div class="news-card-meta">
+              <span class="news-badge badge-onmanorama">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                </svg>
+                Onmanorama
+              </span>
+              <span class="news-date">Jul 28, 2026</span>
+            </div>
+            <div class="news-card-subheading" style="color: var(--gold-primary);">English Feature • Special Coverage
+            </div>
+            <h3 class="news-card-title" style="font-size: 1.35rem; line-height: 1.4;">Supernatural folklore meets
+              history in SP Sarath's chilling horror fantasy novel Varathupokku</h3>
+            <h4 class="news-card-subheading" style="margin-top: 6px; font-size: 0.78rem;">Varathupokku English Review
+            </h4>
+            <p class="news-card-desc">
+              Onmanorama's English literary spotlight delving into how S.P. Sarath brilliantly intertwines Kerala's
+              historical reality, backwater geography, and bone-chilling supernatural folklore.
+            </p>
+          </div>
+          <div class="news-card-footer">
+            <div class="news-card-source">
+              <span>By <strong>Onmanorama News Desk</strong></span>
+              <span>•</span>
+              <span>Kerala Culture</span>
+            </div>
+            <div class="news-card-link-btn">
+              <span>Read Article</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Mobile News Indicators -->
+      <div class="carousel-indicators" id="news-indicators" aria-hidden="true">
+        <button class="indicator-dot active" data-index="0" aria-label="Go to article 1"></button>
+        <button class="indicator-dot" data-index="1" aria-label="Go to article 2"></button>
+        <button class="indicator-dot" data-index="2" aria-label="Go to article 3"></button>
+        <button class="indicator-dot" data-index="3" aria-label="Go to article 4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: GOODREADS & CRITICAL ACCLAIM
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <!-- Green Shining Center Aura -->
+    <div class="section-ambient-glow"
+      style="top: 20%; left: 50%; transform: translateX(-50%); width: 700px; height: 500px;" aria-hidden="true"></div>
+
+    <div class="container">
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+        <span class="section-tag">Reader & Critic Acclaim</span>
+        <h2 class="section-title">Goodreads & Press Reviews</h2>
+      </div>
+
+      <!-- Mobile Swipe Cue -->
+      <div class="carousel-swipe-hint" aria-hidden="true">
+        <span class="hint-arrow">←</span>
+        <span>Swipe reviews</span>
+        <span class="hint-arrow">→</span>
+      </div>
+
+      <div class="reviews-grid" id="reviews-carousel">
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote" style="font-family: var(--font-malayalam); font-size: 1.15rem; line-height: 1.7;">
+              "മലയാളത്തിലെ ഏറ്റവും മികച്ച ഹൊറർ വായനാനുഭവം. ഉറക്കപ്പിശാചിന് ശേഷമുള്ള വരത്തുപോക്ക് നമ്മെ മുണ്ടാറിന്റെ
+              പാതിരാ മഞ്ഞിലൂടെ വിറപ്പിച്ച് നടത്തിക്കും."
+            </p>
+          </div>
+          <div class="review-author-line">
+            <span class="review-critic">Goodreads Reader Review</span>
+            <span class="review-pub">Verified Reviewer • 5.0 Stars</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "A brilliant continuation of the Mundar folklore. S.P. Sarath weaves psychological terror into rural
+              Kerala soil like no other modern writer."
+            </p>
+          </div>
+          <div class="review-author-line">
+            <span class="review-critic">Malayalam Literary Circle</span>
+            <span class="review-pub">Contemporary Fiction Review</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote" style="font-family: var(--font-malayalam); font-size: 1.15rem; line-height: 1.7;">
+              "നാരായണൻ വാപ്പന്റെ ഓരോ വാക്കുകളും ഭയത്തിന്റെ പുതിയ തലങ്ങളിലേക്ക് കൂട്ടിക്കൊണ്ടുപോകുന്നു. അത്യന്തം ഗംഭീരമായ
+              ആഖ്യാനം!"
+            </p>
+          </div>
+          <div class="review-author-line">
+            <span class="review-critic">Manorama Online Readers</span>
+            <span class="review-pub">Book Feature</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile Reviews Indicators -->
+      <div class="carousel-indicators" id="reviews-indicators" aria-hidden="true">
+        <button class="indicator-dot active" data-index="0" aria-label="Go to review 1"></button>
+        <button class="indicator-dot" data-index="1" aria-label="Go to review 2"></button>
+        <button class="indicator-dot" data-index="2" aria-label="Go to review 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (MINIMAL & STRUCTURED)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-monogram">S.P<span class="accent">.</span>SARATH</a>
+          <div class="footer-malayalam">എസ്.പി. ശരത്ത്</div>
+          <p class="footer-desc">
+            Contemporary Malayalam writer &amp; journalist. Author of acclaimed novels <em>Contessa</em>, <em>Varathupokku</em>, and <em>Urakkappishachu</em>.
+          </p>
+          <div class="footer-publisher-tag">
+            <span class="pub-dot"></span>
+            <span>Official Author Portal • DC Books &amp; Manorama Books</span>
+          </div>
+        </div>
+
+        <!-- Mobile Minimal Quick Links -->
+        <nav class="footer-minimal-links" aria-label="Quick Links">
+          <a href="#author">Author</a>
+          <span class="sep" aria-hidden="true">•</span>
+          <a href="#contessa">Novels</a>
+          <span class="sep" aria-hidden="true">•</span>
+          <a href="#reviews">Reviews</a>
+          <span class="sep" aria-hidden="true">•</span>
+          <a href="#contessa" data-open-excerpt="contessa">Excerpt</a>
+          <span class="sep" aria-hidden="true">•</span>
+          <a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener">Goodreads</a>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Novels</span>
+            <ul class="footer-links">
+              <li><a href="#contessa">കോണ്ടെസ്സ (Contessa)</a></li>
+              <li><a href="#urakkappishachu">ഉറക്കപ്പിശാച് (Part I)</a></li>
+              <li><a href="#varathupokku">വരത്തുപോക്ക് (Sequel)</a></li>
+              <li><a href="#contessa" data-open-excerpt="contessa">Read Excerpt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Explore</span>
+            <ul class="footer-links">
+              <li><a href="#author">The Author</a></li>
+              <li><a href="#news">News &amp; Features</a></li>
+              <li><a href="#reviews">Reader Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-title">Platforms</span>
+            <ul class="footer-links">
+              <li><a href="https://www.mbibooks.com/product/contessa/" target="_blank" rel="noopener">Mathrubhumi Books (Contessa) ↗</a></li>
+              <li><a href="https://www.goodreads.com/author/show/70320207.S_P_Sarath" target="_blank" rel="noopener">Goodreads ↗</a></li>
+              <li><a href="https://www.storytel.com/in/books/urakkappishach-ഉറക-കപ-പ-ശ-ച-12158747" target="_blank" rel="noopener">Storytel Audio ↗</a></li>
+              <li><a href="https://www.manoramaonline.com" target="_blank" rel="noopener">Manorama Online ↗</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 S.P. Sarath. <span class="footer-copy-pub">Published by DC Books &amp; Manorama Books. </span>All rights reserved.</div>
+        <a href="#hero" class="footer-back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       REUSABLE MODAL: Chapter Reader & Map Dossier
+       ========================================================================== -->
+  <div id="story-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div id="modal-tag" class="modal-tag">Folklore Archive</div>
+          <h3 id="modal-title" class="modal-title">Location Dossier</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div id="modal-body" class="modal-body">
+        <!-- Content injected dynamically by app.js -->
+      </div>
+
+      <div class="modal-footer">
+        <span
+          style="font-size: 0.76rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.12em;">S.P.
+          Sarath • Manorama Books</span>
+        <button class="btn-secondary" onclick="document.getElementById('story-modal').classList.remove('active')"
+          style="padding: 8px 20px; font-size: 0.74rem;">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
